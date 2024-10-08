@@ -5,6 +5,7 @@
     <file alias="AlarmModel.qml">G:/Proyectos/TO/qt-alarm/AlarmModel.qml</file>
     <file alias="TumblerDelegate.qml">G:/Proyectos/TO/qt-alarm/TumblerDelegate.qml</file>
     <file alias="main.qml">G:/Proyectos/TO/qt-alarm/main.qml</file>
+    <file alias="Stopwatch.qml">G:/Proyectos/TO/qt-alarm/Stopwatch.qml</file>
   </qresource>
 </RCC>
 

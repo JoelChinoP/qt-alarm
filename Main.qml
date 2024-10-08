@@ -40,8 +40,14 @@ ApplicationWindow {
                 text: "Cronómetro"
                 onClicked: {
                     console.log("Cronómetro abierto");
+                    stopwatchPanel.visible = !stopwatchPanel.visible;
                 }
             }
+        }
+        // Incluir el cronómetro
+        Stopwatch {
+            id: stopwatchPanel
+
         }
 
 

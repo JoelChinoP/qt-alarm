@@ -10,6 +10,7 @@ find_package(Qt6 REQUIRED COMPONENTS Core Gui Quick)
 
 qt_add_executable(alarms
     main.cpp
+
 )
 
 set_target_properties(alarms PROPERTIES
@@ -30,6 +31,7 @@ set(qml_resource_files
     "AlarmModel.qml"
     "TumblerDelegate.qml"
     "main.qml"
+    "Stopwatch.qml"
 )
 
 qt_add_resources(alarms "qml"
