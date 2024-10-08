@@ -7,14 +7,13 @@ import QtQuick.Window
 Item {
     id: stopwatchPanel
     visible: true // Mostrar por defecto para pruebas
-
     property int elapsedTime: 0 // Tiempo transcurrido en segundos
     property bool isRunning: false // Estado del cronómetro
 
     ColumnLayout {
         spacing: 10
-        width: parent.width
-        height: parent.height
+        width: 400
+        height: 200
         Text {
             id: stopwatchDisplay
             font.pointSize: 24
@@ -24,7 +23,7 @@ Item {
         }
 
         RowLayout {
-            spacing: 10
+
             Layout.alignment: Qt.AlignHCenter
 
             RoundButton {
