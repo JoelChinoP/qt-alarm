@@ -9,11 +9,19 @@ ApplicationWindow {
     width: 400
     height: 500
     visible: true
+    resizable: false
 
     StackView {
         id: stackView
         anchors.fill: parent
         initialItem: mainPage
+    }
+
+    function formatTime(date) {
+        var hours = date.getHours() % 12; // Convierte a 12 horas
+        if (hours === 0) hours = 12; // Cambia 0 a 12
+        var minutes = date.getMinutes();
+        return hours + ":" + (minutes < 10 ? "0" + minutes : minutes);
     }
 
     Component {
@@ -23,25 +31,58 @@ ApplicationWindow {
             anchors.fill: parent
 
             RowLayout {
-                spacing: 10
                 anchors.horizontalCenter: parent.horizontalCenter
 
                 Text {
-                    id: clock
-                    font.pointSize: 24
+                    id: clockMain
+                    font.pointSize: 48
                     color: "white"
-                    text: Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+                    text: " "
+
+                    Row {
+                        spacing: 2
+                        anchors.horizontalCenter: parent.horizontalCenter
+
+                        Text {
+                            id: clockp1
+                            font.pointSize: 48
+                            color: "white"
+                            text: formatTime(new Date())
+                        }
+
+                        Text {
+                            id: clockp2
+                            anchors.baseline: clockp1.baseline
+                            font.pointSize: 24
+                            color: "#CCCCCC"
+                            text: Qt.formatDateTime(new Date(), "ss")
+                        }
+
+                        Text {
+                            id: clockAMPM
+                            anchors.baseline: clockp1.baseline
+                            font.pointSize: 24
+                            color: "#CCCCCC"
+                            text: " " + Qt.formatDateTime(new Date(), "AP")
+                        }
+                    }
 
                     Timer {
                         interval: 1000
                         running: true
                         repeat: true
                         onTriggered: {
-                            clock.text = Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+                            var currentDate = new Date();
+                            clockp1.text = formatTime(new Date())
+                            clockp2.text = Qt.formatDateTime(currentDate, "ss")
+                            clockAMPM.text = " " + Qt.formatDateTime(currentDate, "AP")
                         }
                     }
+
+
                 }
             }
+
 
             RoundButton {
                 id: stopwatchButton
