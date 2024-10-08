@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-a302613573390bb6bf21.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "alarms",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "alarms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-alarms-Debug-294ae435e908a2f5436d.json",
+					"name" : "alarms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "alarms_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-alarms_autogen-Debug-c54e29d451d2c1067831.json",
+					"name" : "alarms_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "alarms_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-alarms_autogen_timestamp_deps-Debug-214a7965341d13a595e6.json",
+					"name" : "alarms_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "alarms_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-alarms_qmlimportscan-Debug-bb6829399125a6728e6b.json",
+					"name" : "alarms_qmlimportscan",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "G:/Proyectos/TO/qt-alarm/build/Desktop-Debug",
+		"source" : "G:/Proyectos/TO/qt-alarm"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}

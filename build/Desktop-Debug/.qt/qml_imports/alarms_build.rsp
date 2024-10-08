@@ -1,0 +1,12 @@
+-rootPath
+G:/Proyectos/TO/qt-alarm
+-cmake-output
+-output-file
+G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/qml_imports/alarms_build.cmake
+-importPath
+G:/Proyectos/TO/qt-alarm/build/Desktop-Debug
+-importPath
+C:/Qt/6.8.0/mingw_64/qml
+-qrcFiles
+G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/rcc/qml.qrc
+G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/rcc/controls_conf.qrc

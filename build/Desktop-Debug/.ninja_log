@@ -1,0 +1,22 @@
+# ninja log v6
+10	157	7501085065954344	.qt/qml_imports/alarms_build.cmake	876fe32036de15a0
+10	157	7501085065954344	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/qml_imports/alarms_build.cmake	876fe32036de15a0
+158	300	7501085066982987	alarms_autogen/timestamp	90983b64f04093f4
+158	300	7501085066982987	alarms_autogen/mocs_compilation.cpp	90983b64f04093f4
+158	300	7501085066982987	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/alarms_autogen/timestamp	90983b64f04093f4
+158	300	7501085066982987	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/alarms_autogen/mocs_compilation.cpp	90983b64f04093f4
+302	345	7501085067840038	.qt/rcc/qrc_qml.cpp	3c70747a816bb95d
+302	345	7501085067840038	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/rcc/qrc_qml.cpp	3c70747a816bb95d
+309	347	7501085067875092	.qt/rcc/qrc_controls_conf.cpp	c7e79fb98066d51b
+309	347	7501085067875092	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/.qt/rcc/qrc_controls_conf.cpp	c7e79fb98066d51b
+348	410	7501085067927406	CMakeFiles/alarms.dir/alarms_autogen/mocs_compilation.cpp.obj	d773d07cf1e76132
+360	443	7501085068042597	CMakeFiles/alarms.dir/build/Desktop-Debug/.qt/rcc/qrc_controls_conf.cpp.obj	366c2fd6333456f1
+355	444	7501085068002534	CMakeFiles/alarms.dir/build/Desktop-Debug/.qt/rcc/qrc_qml.cpp.obj	8abe80951ae31bd5
+351	1964	7501085067957086	CMakeFiles/alarms.dir/main.cpp.obj	5752c5273131de0a
+1965	2079	7501085084102214	alarms.exe	d14d1f8c4382dbd3
+16	112	7501085492695005	alarms_autogen/timestamp	90983b64f04093f4
+16	112	7501085492695005	alarms_autogen/mocs_compilation.cpp	90983b64f04093f4
+16	112	7501085492695005	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/alarms_autogen/timestamp	90983b64f04093f4
+16	112	7501085492695005	G:/Proyectos/TO/qt-alarm/build/Desktop-Debug/alarms_autogen/mocs_compilation.cpp	90983b64f04093f4
+112	1676	7501085493644044	CMakeFiles/alarms.dir/main.cpp.obj	5752c5273131de0a
+1676	1795	7501085509282331	alarms.exe	d14d1f8c4382dbd3
