@@ -16,7 +16,7 @@ Item {
         height: 200
         Text {
             id: stopwatchDisplay
-            font.pointSize: 24
+            font.pointSize: 50
             color: "white"
             text: formatElapsedTime(elapsedTime)
             Layout.alignment: Qt.AlignHCenter
