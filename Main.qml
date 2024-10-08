@@ -10,27 +10,35 @@ ApplicationWindow {
     height: 500
     visible: true
 
-    ColumnLayout {
+    StackView {
+        id: stackView
         anchors.fill: parent
+        initialItem: mainPage
+    }
 
-
-        RowLayout {
+    Component {
+        id: mainPage
+        ColumnLayout {
             spacing: 10
-            anchors.top: parent.top
-            anchors.horizontalCenter: parent.horizontalCenter
+            anchors.fill: parent
 
-            Text {
-                id: clock
-                font.pointSize: 24
-                color: "white"
-                text: Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+            RowLayout {
+                spacing: 10
+                anchors.horizontalCenter: parent.horizontalCenter
 
-                Timer {
-                    interval: 1000
-                    running: true
-                    repeat: true
-                    onTriggered: {
-                        clock.text = Qt.formatDateTime(new Date(), "hh:mm:ss AP");
+                Text {
+                    id: clock
+                    font.pointSize: 24
+                    color: "white"
+                    text: Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+
+                    Timer {
+                        interval: 1000
+                        running: true
+                        repeat: true
+                        onTriggered: {
+                            clock.text = Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+                        }
                     }
                 }
             }
@@ -38,34 +46,50 @@ ApplicationWindow {
             RoundButton {
                 id: stopwatchButton
                 text: "Cronómetro"
+                Layout.alignment: Qt.AlignHCenter
                 onClicked: {
-                    console.log("Cronómetro abierto");
-                    stopwatchPanel.visible = !stopwatchPanel.visible;
+                    stackView.push(stopwatchPage)
                 }
             }
+
+            ListView {
+                id: alarmListView
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                model: AlarmModel {}
+                delegate: AlarmDelegate {}
+            }
+
+            RoundButton {
+                id: addAlarmButton
+                text: "+"
+                anchors.bottom: parent.bottom
+                anchors.bottomMargin: 8
+                anchors.horizontalCenter: parent.horizontalCenter
+                onClicked: alarmDialog.open()
+            }
         }
-        // Incluir el cronómetro
-        Stopwatch {
-            id: stopwatchPanel
+    }
 
-        }
+    Component {
+        id: stopwatchPage
+        ColumnLayout {
+            spacing: 10
+            anchors.fill: parent
 
+            Stopwatch {
+                id: stopwatchPanel
 
-        ListView {
-            id: alarmListView
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            model: AlarmModel {}
-            delegate: AlarmDelegate {}
-        }
+            }
 
-        RoundButton {
-            id: addAlarmButton
-            text: "+"
-            anchors.bottom: parent.bottom
-            anchors.bottomMargin: 8
-            anchors.horizontalCenter: parent.horizontalCenter
-            onClicked: alarmDialog.open()
+            RoundButton {
+                id: backButton
+                text: "Volver"
+                Layout.alignment: Qt.AlignHCenter
+                onClicked: {
+                    stackView.pop()
+                }
+            }
         }
     }
 
