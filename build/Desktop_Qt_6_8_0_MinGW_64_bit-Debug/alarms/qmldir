@@ -1,0 +1,5 @@
+module alarms
+typeinfo appalarms.qmltypes
+prefer :/qt/qml/alarms/
+Main 1.0 Main.qml
+

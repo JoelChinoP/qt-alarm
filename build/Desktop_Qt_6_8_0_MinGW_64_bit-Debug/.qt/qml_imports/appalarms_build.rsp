@@ -1,0 +1,14 @@
+-rootPath
+E:/projects_c++/alarm/alarms
+-cmake-output
+-output-file
+E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/qml_imports/appalarms_build.cmake
+-importPath
+E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/alarms
+-importPath
+E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug
+-importPath
+C:/Qt/6.8.0/mingw_64/qml
+-qrcFiles
+E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/qmake_alarms.qrc
+E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug/.qt/rcc/appalarms_raw_qml_0.qrc

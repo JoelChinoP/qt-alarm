@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/qt/qml/alarms/">
+    <file alias="Main.qml">E:/projects_c++/alarm/alarms/Main.qml</file>
+  </qresource>
+</RCC>
+

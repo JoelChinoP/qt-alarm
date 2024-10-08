@@ -1,0 +1,187 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-2f3f48eb24e39a5053f0.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "alarms",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "all_aotstats::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_aotstats-Debug-ac4b6660b9e44c47205b.json",
+					"name" : "all_aotstats",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint-Debug-53117294ad7c249a7d22.json",
+					"name" : "all_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_json-Debug-2ad067edcc12aff11173.json",
+					"name" : "all_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmllint_module-Debug-a9f8d8eaffae77bc6c9d.json",
+					"name" : "all_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "all_qmltyperegistrations::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-all_qmltyperegistrations-Debug-8091c73084f786f4bc52.json",
+					"name" : "all_qmltyperegistrations",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms-Debug-e8768047e96e9c705eb6.json",
+					"name" : "appalarms",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_autogen-Debug-2494bfa77f841a2ab5a3.json",
+					"name" : "appalarms_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_autogen_timestamp_deps-Debug-f9f61a17f2bba1401084.json",
+					"name" : "appalarms_autogen_timestamp_deps",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_qmlimportscan::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_qmlimportscan-Debug-7b8a7edf08f7229782ac.json",
+					"name" : "appalarms_qmlimportscan",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_qmllint::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_qmllint-Debug-9f74146ab89f266b9f6b.json",
+					"name" : "appalarms_qmllint",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_qmllint_json::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_qmllint_json-Debug-0633e09f49634c911dd7.json",
+					"name" : "appalarms_qmllint_json",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_qmllint_module::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_qmllint_module-Debug-182c155cb90ac6dffd00.json",
+					"name" : "appalarms_qmllint_module",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_qmltyperegistration::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_qmltyperegistration-Debug-631cf1fc7999f3d371dc.json",
+					"name" : "appalarms_qmltyperegistration",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "appalarms_tooling::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-appalarms_tooling-Debug-370b30e3327ab19ae1cd.json",
+					"name" : "appalarms_tooling",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "module_appalarms_aotstats_targets::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-module_appalarms_aotstats_targets-Debug-b91eaaa07b37925ef5f1.json",
+					"name" : "module_appalarms_aotstats_targets",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "E:/projects_c++/alarm/alarms/build/Desktop_Qt_6_8_0_MinGW_64_bit-Debug",
+		"source" : "E:/projects_c++/alarm/alarms"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 7
+	}
+}
