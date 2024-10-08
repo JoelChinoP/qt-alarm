@@ -60,25 +60,32 @@ Item {
     // Timer para el cronómetro
     Timer {
         id: stopwatchTimer
-        interval: 1000 // 1 segundo
+        interval: 10 // Actualizar cada 10 milisegundos
         running: false
         repeat: true
         onTriggered: {
-            elapsedTime++
+            elapsedTime += 10
             stopwatchDisplay.text = formatElapsedTime(elapsedTime) // Actualizar la visualización
         }
     }
 
     // Función para formatear el tiempo
-    function formatElapsedTime(seconds) {
-        var hours = Math.floor(seconds / 3600)
-        var minutes = Math.floor((seconds % 3600) / 60)
-        var secs = seconds % 60
-        return formatNumber(hours) + ":" + formatNumber(minutes) + ":" + formatNumber(secs)
+    function formatElapsedTime(milliseconds) {
+        var totalSeconds = Math.floor(milliseconds / 1000)
+        var minutes = Math.floor(totalSeconds / 60)
+        var seconds = totalSeconds % 60
+        var millis = Math.floor((milliseconds % 1000) / 10)
+        return formatNumber(minutes) + ":" + formatNumber(seconds) + ":" + formatNumber(millis)
     }
 
     // Función para añadir ceros a la izquierda
-    function formatNumber(number) {
+    function formatNumber(number, isMillis = false) {
+        if (isMillis) {
+            if (number < 100) {
+                return number < 10 ? "00" + number : "0" + number
+            }
+            return number.toString().slice(0, 2)
+        }
         return number < 10 ? "0" + number : number.toString()
     }
 }
