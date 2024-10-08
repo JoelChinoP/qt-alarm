@@ -10,20 +10,41 @@ ApplicationWindow {
     height: 500
     visible: true
 
-    ListView {
-        id: alarmListView
+    ColumnLayout {
         anchors.fill: parent
-        model: AlarmModel {}
-        delegate: AlarmDelegate {}
-    }
 
-    RoundButton {
-        id: addAlarmButton
-        text: "+"
-        anchors.bottom: alarmListView.bottom
-        anchors.bottomMargin: 8
-        anchors.horizontalCenter: parent.horizontalCenter
-        onClicked: alarmDialog.open()
+
+        RowLayout {
+            spacing: 10
+            anchors.top: parent.top
+            anchors.horizontalCenter: parent.horizontalCenter
+
+            Text {
+                id: clock
+                font.pointSize: 24
+                color: "white"
+                text: Qt.formatDateTime(new Date(), "hh:mm:ss AP")
+
+
+        }
+
+
+        ListView {
+            id: alarmListView
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            model: AlarmModel {}
+            delegate: AlarmDelegate {}
+        }
+
+        RoundButton {
+            id: addAlarmButton
+            text: "+"
+            anchors.bottom: parent.bottom
+            anchors.bottomMargin: 8
+            anchors.horizontalCenter: parent.horizontalCenter
+            onClicked: alarmDialog.open()
+        }
     }
 
     AlarmDialog {
