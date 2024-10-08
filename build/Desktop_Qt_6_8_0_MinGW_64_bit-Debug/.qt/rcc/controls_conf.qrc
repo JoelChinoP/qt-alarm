@@ -1,0 +1,6 @@
+<RCC>
+  <qresource prefix="/">
+    <file alias="qtquickcontrols2.conf">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/qtquickcontrols2.conf</file>
+  </qresource>
+</RCC>
+

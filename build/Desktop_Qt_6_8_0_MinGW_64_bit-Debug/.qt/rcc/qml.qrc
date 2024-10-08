@@ -1,0 +1,10 @@
+<RCC>
+  <qresource prefix="/alarms/">
+    <file alias="AlarmDelegate.qml">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/AlarmDelegate.qml</file>
+    <file alias="AlarmDialog.qml">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/AlarmDialog.qml</file>
+    <file alias="AlarmModel.qml">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/AlarmModel.qml</file>
+    <file alias="TumblerDelegate.qml">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/TumblerDelegate.qml</file>
+    <file alias="main.qml">C:/Qt/Examples/Qt-6.8.0/tutorials/alarms/main.qml</file>
+  </qresource>
+</RCC>
+
