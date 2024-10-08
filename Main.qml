@@ -35,7 +35,13 @@ ApplicationWindow {
                 }
             }
 
-
+            RoundButton {
+                id: stopwatchButton
+                text: "Cronómetro"
+                onClicked: {
+                    console.log("Cronómetro abierto");
+                }
+            }
         }
 
 
