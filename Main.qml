@@ -9,7 +9,6 @@ ApplicationWindow {
     width: 400
     height: 500
     visible: true
-    //resizable: false
 
     StackView {
         id: stackView
@@ -109,6 +108,13 @@ ApplicationWindow {
                 anchors.horizontalCenter: parent.horizontalCenter
                 onClicked: alarmDialog.open()
             }
+
+            AlarmDialog {
+                id: alarmDialog
+                x: Math.round((parent.width - width) / 2)
+                y: Math.round((parent.height - height) / 2)
+                alarmModel: alarmListView.model
+            }
         }
     }
 
@@ -134,10 +140,5 @@ ApplicationWindow {
         }
     }
 
-    AlarmDialog {
-        id: alarmDialog
-        x: Math.round((parent.width - width) / 2)
-        y: Math.round((parent.height - height) / 2)
-        alarmModel: alarmListView.model
-    }
+
 }

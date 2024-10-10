@@ -41,6 +41,7 @@ ListModel {
             ListElement { dayOfWeek: 6; repeat: false }
         ]
     }
+
     ListElement {
         hour: 7
         minute: 0
