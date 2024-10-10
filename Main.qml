@@ -9,7 +9,7 @@ ApplicationWindow {
     width: 400
     height: 500
     visible: true
-    resizable: false
+    //resizable: false
 
     StackView {
         id: stackView

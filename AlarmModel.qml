@@ -10,7 +10,7 @@ ListModel {
         month: 8
         year: 2018
         activated: true
-        label: "Wake up"
+        label: "Levantarse"
         repeat: true
         daysToRepeat: [
             ListElement { dayOfWeek: 0; repeat: false },
@@ -29,7 +29,7 @@ ListModel {
         month: 8
         year: 2018
         activated: true
-        label: "Wake up"
+        label: "Levantarse"
         repeat: true
         daysToRepeat: [
             ListElement { dayOfWeek: 0; repeat: true },
@@ -48,7 +48,7 @@ ListModel {
         month: 8
         year: 2018
         activated: false
-        label: "Exercise"
+        label: "Ejercicio"
         repeat: true
         daysToRepeat: [
             ListElement { dayOfWeek: 0; repeat: true },

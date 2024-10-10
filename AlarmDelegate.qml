@@ -49,7 +49,7 @@ ItemDelegate {
         }
         CheckBox {
             id: alarmRepeat
-            text: qsTr("Repeat")
+            text: qsTr("Repetir")
             checked: model.repeat
             visible: root.checked
             onToggled: model.repeat = checked
@@ -74,7 +74,7 @@ ItemDelegate {
 
         TextField {
             id: alarmDescriptionTextField
-            placeholderText: qsTr("Enter description here")
+            placeholderText: qsTr("Título de la alarma")
             cursorVisible: true
             visible: root.checked
             text: model.label
@@ -82,7 +82,7 @@ ItemDelegate {
         }
         Button {
             id: deleteAlarmButton
-            text: qsTr("Delete")
+            text: qsTr("Eliminar")
             width: 40
             height: 40
             visible: root.checked
